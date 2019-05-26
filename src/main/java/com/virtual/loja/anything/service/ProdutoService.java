@@ -1,5 +1,9 @@
 package com.virtual.loja.anything.service;
 
+import java.util.List;
+
+import com.virtual.loja.anything.model.Produto;
+
 /**
  * Descrição: Interface de serviço de Produto.
  * 
@@ -9,4 +13,12 @@ package com.virtual.loja.anything.service;
  */
 public interface ProdutoService {
 
+	Produto updateSaveProduto(Produto produto);
+
+	Produto findById(Long id);
+
+	List<Produto> findAll();
+
+	void deleteById(Long id);
+	
 }
