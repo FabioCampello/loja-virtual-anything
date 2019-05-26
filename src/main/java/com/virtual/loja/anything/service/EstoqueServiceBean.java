@@ -47,7 +47,7 @@ public class EstoqueServiceBean implements EstoqueService {
 	}
 
 	/**
-	 * Descrição: Retornando todos os Estoque
+	 * Descrição: Retornando todos os Estoques
 	 * 
 	 * @return List<Estoque>
 	 */

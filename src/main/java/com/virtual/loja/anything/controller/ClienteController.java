@@ -65,7 +65,7 @@ public class ClienteController {
 	}
 
 	/**
-	 * Descrição: Retornando todos os Cliente
+	 * Descrição: Retornando todos os Clientes
 	 * 
 	 * @return List<Cliente>
 	 */

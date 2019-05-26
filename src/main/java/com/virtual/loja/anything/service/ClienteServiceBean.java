@@ -47,7 +47,7 @@ public class ClienteServiceBean implements ClienteService {
 	}
 
 	/**
-	 * Descrição: Retornando todos os Cliente
+	 * Descrição: Retornando todos os Clientes
 	 * 
 	 * @return List<Cliente>
 	 */
