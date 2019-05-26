@@ -1,5 +1,9 @@
 package com.virtual.loja.anything.service;
 
+import java.util.List;
+
+import com.virtual.loja.anything.model.Cliente;
+
 /**
  * Descrição: Interface de serviço de Cliente.
  * 
@@ -8,5 +12,13 @@ package com.virtual.loja.anything.service;
  * @version 0.0.1
  */
 public interface ClienteService {
+
+	Cliente updateSaveCliente(Cliente cliente);
+
+	Cliente findById(Long id);
+
+	List<Cliente> findAll();
+
+	void deleteById(Long id);
 
 }

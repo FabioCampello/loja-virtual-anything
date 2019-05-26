@@ -8,10 +8,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableJpaRepositories
 @EnableTransactionManagement
-public class LojaVirtualAnythingApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LojaVirtualAnythingApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
