@@ -36,7 +36,7 @@ public class ClienteController {
 	 * @param Cliente cliente
 	 * @return Cliente cliente
 	 */
-	@RequestMapping(value = "updateSaveUsuario", method = RequestMethod.POST)
+	@RequestMapping(value = "updateSaveCliente", method = RequestMethod.PUT)
 	public ResponseEntity<Cliente> updateSaveCliente(@RequestBody Cliente cliente) {
 		ResponseEntity<Cliente> cli = null;
 		try {
@@ -53,7 +53,7 @@ public class ClienteController {
 	 * @param id
 	 * @return Cliente
 	 */
-	@RequestMapping(value = "findById/{id}", method = RequestMethod.POST)
+	@RequestMapping(value = "findById/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Cliente> findById(@PathVariable("id") Long id) {
 		ResponseEntity<Cliente> cli = null;
 		try {
@@ -69,7 +69,7 @@ public class ClienteController {
 	 * 
 	 * @return List<Cliente>
 	 */
-	@RequestMapping(value = "findAll", method = RequestMethod.POST)
+	@RequestMapping(value = "findAll", method = RequestMethod.GET)
 	public ResponseEntity<List<Cliente>> findAll() {
 		ResponseEntity<List<Cliente>> list = null;
 		try {
@@ -85,8 +85,8 @@ public class ClienteController {
 	 * 
 	 * @param id
 	 */
-	@RequestMapping(value = "deleteById", method = RequestMethod.POST)
-	public void deleteById(Long id) {
+	@RequestMapping(value = "deleteById/{id}", method = RequestMethod.DELETE)
+	public void deleteById(@PathVariable("id") Long id) {
 		try {
 			clienteService.deleteById(id);
 		} catch (Exception error) {
