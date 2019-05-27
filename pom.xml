@@ -23,7 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<start-class>com.virtual.loja.LojaVirtualAnythingApplication</start-class>
+		<start-class>com.virtual.loja.anything.Application</start-class>
 		<java.version>11</java.version>
 	</properties>
 
